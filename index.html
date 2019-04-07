@@ -39,6 +39,12 @@
               <li v-for="size in sizes">{{ size }}</li>
             </ul>
 
+            <button v-on:click="addToCart()">Add to Cart</button>
+
+            <div class="cart">
+              <p>Cart: ({{ cart }})</p>
+            </div>
+
             <p>Made with <a :href="mwLink">Vue JS</a></p>
         </div>
       </div>

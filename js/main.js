@@ -19,6 +19,12 @@ var app = new Vue({
       }
     ],
     sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11],
-    mwLink: 'http://vuejs.org'
+    cart: 0,
+    mwLink: 'http://vuejs.org',
+    methods: {
+      addToCart: function() {
+        this.cart++;
+      }
+    },
   }
 });

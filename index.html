@@ -28,6 +28,17 @@
             <p v-else>Out of Stock</p>
             <p v-if="onSale"><strong>On Sale</strong></p>
 
+            <ul>
+              <li v-for="detail in details">{{ detail }}</li>
+            </ul>
+
+            <p v-for="variant in variants" :key="variant.variantID">{{ variant.variantColor }}</p>
+
+            <h3>Size</h3>
+            <ul>
+              <li v-for="size in sizes">{{ size }}</li>
+            </ul>
+
             <p>Made with <a :href="mwLink">Vue JS</a></p>
         </div>
       </div>

@@ -5,6 +5,8 @@ var app = new Vue({
     desc: 'Not smelly at all',
     image: './images/vmSocks-green-onWhite.jpg',
     imageAlt: 'Green socks',
+    inventory: 12,
+    onSale: true,
     mwLink: 'http://vuejs.org'
   }
 });

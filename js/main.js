@@ -11,20 +11,28 @@ var app = new Vue({
     variants: [
       {
         variantId: 2234,
-        variantColor: 'green'
+        variantColor: 'green',
+        variantImage: './images/vmSocks-green-onWhite.jpg',
       },
       {
         variantId: 2235,
-        variantColor: 'blue'
+        variantColor: 'blue',
+        variantImage: './images/vmSocks-blue-onWhite.jpg',
       }
     ],
     sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11],
     cart: 0,
     mwLink: 'http://vuejs.org',
-    methods: {
-      addToCart: function() {
-        this.cart++;
-      }
+  },
+  methods: {
+    addToCart() {
+      this.cart++;
     },
+    removeFromCart() {
+      this.cart--;
+    },
+    updateProduct(variantImage) {
+      this.image = variantImage;
+    }
   }
 });
